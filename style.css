@@ -1,37 +1,38 @@
 :root {
---primary-color: #fd0d0d;
---secondary-color: #5d97ca;
---background-color: #8faedb;
---surface-color: #dd6f6f;
---text-color: #212529;
---border-color: #79a4db;
+    --primary-color: #fd0d0d;
+    --secondary-color: #5d97ca;
+    --background-color: #8faedb;
+    --surface-color: #dd6f6f;
+    --text-color: #212529;
+    --border-color: #79a4db;
 }
 
 body {
-background-color: #c5ddfd;
+    background-color: #c5ddfd;
 }
 
 body {
-background-color: #90befa;
-font-family: "Sriracha", cursive;/* ใชฟอนตพื้นฐานที่ไมมเีชิง */
-color: #333; /* สีเทาเขมเกือบดํา */
+    background-color: #90befa;
+    font-family: "Sriracha", cursive;/* ใชฟอนตพื้นฐานที่ไมมเีชิง */
+    color: #333; /* สีเทาเขมเกือบดํา */
 }
 
 .page-header {
-background-color: rgb(173, 238, 238);
-padding: 20px;
+    background-color: rgb(173, 238, 238);
+    padding: 20px;
 }
 
 #page-title {
-color: #0039b3; /* สีน้ําเงินเขม */
-font-size: 24px;
+    color: #0039b3; /* สีน้ําเงินเขม */
+    font-size: 24px;
 }
 
 .card {
-background-color: rgb(255, 255, 255);
-padding: 20px;
-border: 1px solid #c5ddfd;
-margin: 10px;
+    background-color: var(--surface-color);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .dashboard-container{
@@ -51,4 +52,17 @@ margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+}
+
+@media (max-width: 768px){
+    .dashboard-container{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+        padding: 10px;
+    }
+    .main-content{
+        grid-template-columns: 1fr;
+    }
 }
