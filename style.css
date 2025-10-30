@@ -1,0 +1,54 @@
+:root {
+--primary-color: #fd0d0d;
+--secondary-color: #5d97ca;
+--background-color: #8faedb;
+--surface-color: #dd6f6f;
+--text-color: #212529;
+--border-color: #79a4db;
+}
+
+body {
+background-color: #c5ddfd;
+}
+
+body {
+background-color: #90befa;
+font-family: "Sriracha", cursive;/* ใชฟอนตพื้นฐานที่ไมมเีชิง */
+color: #333; /* สีเทาเขมเกือบดํา */
+}
+
+.page-header {
+background-color: rgb(173, 238, 238);
+padding: 20px;
+}
+
+#page-title {
+color: #0039b3; /* สีน้ําเงินเขม */
+font-size: 24px;
+}
+
+.card {
+background-color: rgb(255, 255, 255);
+padding: 20px;
+border: 1px solid #c5ddfd;
+margin: 10px;
+}
+
+.dashboard-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    width: 250px;
+    padding: 20px;
+    background-color: var(--surface-color);
+}
+
+.main-content{
+    flex-grow: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
